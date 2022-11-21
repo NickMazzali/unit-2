@@ -29,3 +29,4 @@ console.log("or operator")
 // or operator
 console.log(num1===4 || num2 === 6); //output: false
 
+// change
