@@ -11,8 +11,8 @@ Conditionals
 
 // ! examples
 // if else
-let currenthour = 14;
-var greeting = "";
+// let currenthour = 14;
+// var greeting = "";
 
 if (currenthour < 12) {
   // in between brackets is considered a block of code
@@ -42,11 +42,11 @@ console.log(greeting);
 
 // Code refactoring If statements
 
-var isLightBulbOn = true;
+// var isLightBulbOn = true;
 
-if(isLightBulbOn === true){
-    console.log("yes the lightbulb is on!");
-}
+// if(isLightBulbOn === true){
+//     console.log("yes the lightbulb is on!");
+// }
 
 // Refactored
 let isLightBulbOn = true;
@@ -64,3 +64,49 @@ if(isLightBulbOn !== true){
 if(!isLightBulbOn){
     console.log("the light bulb is off!");
 }
+var today = new Date();
+console.log(today.getSeconds());
+var currentSeconds = today.getSeconds();
+// 5/2 R 1 = odd
+// 22/2 R 0 = even
+// console.log(currentSeconds % 2);
+
+if(currentSeconds % 2 === 0){
+  console.log(`the current second is ${currentSeconds} and it is even`);
+
+} else {
+  console.log(`the current second is ${currentSeconds} and it is odd`);
+}
+
+// ! Ternary Statements
+
+var age = 20;
+
+if(age>=18){
+  console.log("you can vote");
+} else {
+  console.log("you cannot vote");
+}
+// these two statements are the same
+
+age >= 18 ? console.log("T:you can vote") : console.log("you cannot vote");
+
+// ! Switch Statement
+
+let month = "dec";
+let totalNumberDays = 0;
+switch (month){
+case "dec":
+  totalNumberDays = 31;
+  break;
+  case "Jan":
+    totalNumberDays = 31;
+    break;
+  case "Feb":
+    totalNumberDays = 28;
+    break;
+    default:
+      totalNumberDays = "month not real";
+}
+
+console.log(totalNumberDays);
