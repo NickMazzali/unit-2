@@ -39,7 +39,6 @@ if (currenthour < 12) {
 
 console.log(greeting);
 
-
 // Code refactoring If statements
 
 // var isLightBulbOn = true;
@@ -51,18 +50,18 @@ console.log(greeting);
 // Refactored
 let isLightBulbOn = true;
 
-if(isLightBulbOn){
-    console.log("yes the lightbulb is on!");
+if (isLightBulbOn) {
+  console.log("yes the lightbulb is on!");
 }
 
 // Not statement
-if(isLightBulbOn !== true){
-    console.log("the light bulb is off!");
+if (isLightBulbOn !== true) {
+  console.log("the light bulb is off!");
 }
 
 // refactored
-if(!isLightBulbOn){
-    console.log("the light bulb is off!");
+if (!isLightBulbOn) {
+  console.log("the light bulb is off!");
 }
 var today = new Date();
 console.log(today.getSeconds());
@@ -71,9 +70,8 @@ var currentSeconds = today.getSeconds();
 // 22/2 R 0 = even
 // console.log(currentSeconds % 2);
 
-if(currentSeconds % 2 === 0){
+if (currentSeconds % 2 === 0) {
   console.log(`the current second is ${currentSeconds} and it is even`);
-
 } else {
   console.log(`the current second is ${currentSeconds} and it is odd`);
 }
@@ -82,7 +80,7 @@ if(currentSeconds % 2 === 0){
 
 var age = 20;
 
-if(age>=18){
+if (age >= 18) {
   console.log("you can vote");
 } else {
   console.log("you cannot vote");
@@ -95,18 +93,51 @@ age >= 18 ? console.log("T:you can vote") : console.log("you cannot vote");
 
 let month = "dec";
 let totalNumberDays = 0;
-switch (month){
-case "dec":
-  totalNumberDays = 31;
-  break;
+switch (month) {
+  case "dec":
+    totalNumberDays = 31;
+    break;
   case "Jan":
     totalNumberDays = 31;
     break;
   case "Feb":
     totalNumberDays = 28;
     break;
-    default:
-      totalNumberDays = "month not real";
+  default:
+    totalNumberDays = "month not real";
 }
 
 console.log(totalNumberDays);
+
+// ternary react conditional component
+
+let flag = false;
+if (flag) {
+  console.log("signup");
+} else {
+  console.log("login");
+}
+
+// ternary syntax
+//  condition ? statement if true: statment if false
+
+flag ? console.log("signup") : console.log("login");
+
+// if/else allows for if-only conditional
+if (true) {
+  console.log("ture condition");
+}
+
+// ternaries do NOT, needs a null for the false condition
+
+true ? console.log("ternary statement") : null;
+
+// if/else if statements can also be written in ternary
+
+temp >= 72
+  ? console.log("it's summer")
+  : temp >= 62
+  ? console.log("it's fall")
+  : temp >= 32
+  ? console.log("it's winter")
+  : null;

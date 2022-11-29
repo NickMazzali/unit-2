@@ -27,10 +27,10 @@ Event Listener - A "listener" function that waits for an event to occur and exec
         -callback function
 
 */                    
-// process.stdin.once("data", function (input) {
-//     console.log(`this is our input being repeated: ${input}`)
-//     process.exit()
-// })
+process.stdin.once("data", function (input) {
+    console.log(`this is our input being repeated: ${input}`)
+    process.exit()
+})
 
 
 // process.stdin.on("data", function (input){
@@ -56,7 +56,7 @@ function nameoffuntion(parameter){
 // function expressions
 // not hoisted
 
-let fxexpressioin = function(parameter) {
+let fxexpression = function(parameter) {
 
     return parameter
 }
@@ -123,8 +123,8 @@ let solution = (num1 + num2)
 
 rl.question(`what is the sum of ${num1} & ${num2}?` , (input)=>{
     if (input.trim() = solution) [
-        rl.setprompt("correct")
-        rl.prompt()
+        rl.setprompt("correct"),
+        rl.prompt(),
         rl.close()
 
     ]
