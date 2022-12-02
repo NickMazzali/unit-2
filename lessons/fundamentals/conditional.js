@@ -133,7 +133,7 @@ if (true) {
 true ? console.log("ternary statement") : null;
 
 // if/else if statements can also be written in ternary
-
+// chaining ternaries
 temp >= 72
   ? console.log("it's summer")
   : temp >= 62

@@ -46,7 +46,7 @@ myPromise.then(
         console.log("code that runs after")
 })
 
-// asynchromus functions
+// asynchronus functions
 
 /* 
     * Introduced in ES*
