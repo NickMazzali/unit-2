@@ -74,3 +74,66 @@ while(i <= 31){
 }
 
 console.log(total);
+
+
+// for/in
+
+    let student1 = {
+        name: "jeff",
+        class: "math",
+        currentGrade: 10,
+        isPassing: true,
+    }
+
+    for(key in student1){
+        console.log(student1[key])
+    }
+
+    let formData = { email: "", password: "" };
+    let message = "Success"
+    let missingData = []
+    for (key in formData){
+        if(formData[key]==""){
+        //    message = "You are missing password or email"
+        missingData.push(key)
+        }
+    }
+    
+    console.log(missingData.length> 0 ? "You are missing " + missingData.join(", "): "success")
+    
+
+let names = ["name1", "name2", "name3", "name4"]
+
+for(index in names){
+    console.log(arrayBucket)
+    console.log(names[index])
+}
+
+/* 
+! do not use this for/in loop on arrays where order is important to you
+*/
+
+// For of Loop - data types: String and Array
+let firstName = "Robert"
+console.log(firstName[2])
+
+for (index in firstName){
+    console.log(index)
+}
+
+// While - Loop
+let animals = ["monkey", "frog", "fly", "tiger"]
+let removedAnimal
+while(animals.length>1){
+ removedAnimal= animals.shift()
+ console.log(animals)
+console.log(removedAnimal)
+}
+
+let triangle = new Array(20)
+triangle.fill("*")
+
+while(triangle.length>0){
+    console.log(triangle.join(" "))
+    triangle.pop()
+}
